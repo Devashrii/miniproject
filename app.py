@@ -12,19 +12,19 @@ model = pickle.load(open(model_path, 'rb'))
 # Define the features for the input form
 features = [
     "Age", "Fast_Food_Intake", "Physical_Activity", "Sugar_Intake_Per_Day",
-    "Fiber_Intake_Per_Day", "Protein_Intake_Per_Day", "Processed_Food_Score",
+    "Processed_Food_Score",
     "Dietary_Pattern", "Socioeconomic_Status", "Environmental_Factors",
     "Region", "Industrialization_Level", "Nutrition_Access"
 ]
 
 # Categorical features for dropdown menus
 categorical_features = {
-    "Dietary_Pattern": ["Pattern_1", "Pattern_2", "Pattern_3"],  # Replace with actual categories
-    "Socioeconomic_Status": ["Low", "Middle", "High"],
-    "Environmental_Factors": ["Factor_1", "Factor_2", "Factor_3"],
-    "Region": ["Region_1", "Region_2", "Region_3"],
-    "Industrialization_Level": ["Low", "Medium", "High"],
-    "Nutrition_Access": ["Limited", "Moderate", "Abundant"]
+    "Dietary_Pattern": ["Vegan", "Fast Food", "Processed","Traditional"],  # Replace with actual categories
+    "Socioeconomic_Status": ["Low", "Medium", "High"],
+    "Environmental_Factors": ["Low", "Medium", "High"],
+    "Region": ["Urban", "Rural", "Subarbun"],
+    "Industrialization_Level": ["Low", "Moderate", "High"],
+    "Nutrition_Access": ["Good", "Average", "Excellent"]
 }
 
 # Load label encoders to map categorical values
